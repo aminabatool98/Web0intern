@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Amina Batool - Personal Profile</title>
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f7f4ef;
+        color: #1f2933;
+        line-height: 1.6;
+    }
+
+    .page {
+        width: 90%;
+        max-width: 1080px;
+        margin: auto;
+    }
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .brand {
+        font-size: 20px;
+        font-weight: bold;
+        color: #1f2933;
+        text-decoration: none;
+    }
+
+    nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    nav a {
+        color: #61707d;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        color: #d86b45;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        padding: 60px 0;
+    }
+
+    .hero-copy {
+        flex: 1;
+    }
+
+    .eyebrow {
+        color: #a9492d;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin: 10px 0;
+    }
+
+    .intro {
+        color: #61707d;
+        font-size: 18px;
+    }
+
+    .profile-frame {
+        width: 300px;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid #ddd;
+        box-shadow: 10px 10px 0 #d86b45;
+    }
+
+    .profile-frame img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section {
+        padding: 35px;
+        border: 1px solid #ddd;
+    }
+
+    section h2 {
+        color: #1f2933;
+        margin-top: 0;
+    }
+
+
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .skills li {
+        background-color: #fce8df;
+        color: #a9492d;
+        padding: 8px 15px;
+        border-radius: 20px;
+    }
+
+    /* Education and Experience */
+
+    .timeline-item {
+        margin-bottom: 20px;
+    }
+
+    .timeline-item span {
+        color: #a9492d;
+        font-weight: bold;
+    }
+
+    /* Contact */
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0;
+    }
+
+    .contact-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .contact-links a {
+        color: #a9492d;
+    }
+
+    .contact-links a:hover {
+        color: #d86b45;
+    }
+
+    /* Contact Form */
+
+    .contact-form {
+        background-color: white;
+        margin-top: 30px;
+    }
+
+    .contact-form label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .contact-form button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #d86b45;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .contact-form button:hover {
+        background-color: #a9492d;
+    }
+
+    /* Footer */
+
+    footer {
+        padding: 20px 0;
+        color: #61707d;
+        border-top: 1px solid #ddd;
+    }
+
+    /* Responsive Design */
+
+    @media (max-width: 700px) {
+
+        header {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .hero {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .profile-frame {
+            width: 250px;
+        }
+
+        .content-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .contact {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+    <header>
+
+        <a class="brand" href="#top">My Portfolio</a>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <main id="top">
+
+        <section class="hero">
+
+            <div class="hero-copy">
+
+                <p class="eyebrow">Hello, I am</p>
+
+                <h1>Amina Batool</h1>
+
+                <p class="intro">
+                    I am a Software Engineering student interested
+                    in web development, programming, and artificial
+                    intelligence.
+                </p>
+
+            </div>
+
+
+            <div class="profile-frame">
+
+                <img
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=85"
+                    alt="Profile picture of Amina Batool">
+
+            </div>
+
+        </section>
+        <div class="content-grid">
+            <section id="about">
+
+                <h2>About Me</h2>
+
+                <p>
+                    I am a passionate Software Engineering student
+                    who enjoys learning programming and building
+                    useful web applications.
+                </p>
+
+                <p>
+                    I am currently improving my skills in web
+                    development, programming, and artificial
+                    intelligence.
+                </p>
+
+            </section>
+            <section id="skills">
+
+                <h2>My Skills</h2>
+
+                <ul class="skills">
+
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Express.js</li>
+                    <li>Git</li>
+                    <li>C++</li>
+                    <li>Python</li>
+
+                </ul>
+
+            </section>
+
+            <section id="experience">
+
+                <h2>Experience</h2>
+
+                <div class="timeline-item">
+
+                    <span>2023 - Present</span>
+
+                    <h3>Web Development</h3>
+
+                    <p>
+                        Learning and building responsive websites
+                        using HTML, CSS and JavaScript.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span>Personal Projects</span>
+
+                    <h3>Programming Projects</h3>
+
+                    <p>
+                        Creating small projects to improve my
+                        programming and problem-solving skills.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section id="education">
+
+                <h2>Education</h2>
+
+                <div class="timeline-item">
+
+                    <span>2024 - 2028</span>
+
+                    <h3>Software Engineering Student</h3>
+
+                    <p>
+                        University of Agriculture, Faisalabad
+                    </p>
+
+                </div>
+
+            </section>
+
+        </div>
+        <section class="contact" id="contact">
+
+            <div>
+
+                <p class="eyebrow">Let's Connect</p>
+
+                <h2>Contact Me</h2>
+
+                <p>
+                    Email:
+                    <a href="mailto:batoolamina9876@example.com">
+                        batoolamina9876@example.com
+                    </a>
+                </p>
+
+                <p>
+                    Phone: +92 300 1234567
+                </p>
+
+            </div>
+            <div class="contact-links">
+
+                <a
+                    href="https://www.linkedin.com/in/amina-batool-6b8989344"
+                    target="_blank"
+                    rel="noreferrer">
+                    LinkedIn
+                </a>
+
+                <a
+                    href="https://github.com"
+                    target="_blank"
+                    rel="noreferrer">
+                    GitHub
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="contact-form">
+
+            <h2>Send Me a Message</h2>
+
+            <form>
+
+                <label for="name">Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required>
+
+
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+
+
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message"
+                    required></textarea>
+
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © 2026 Amina Batool. All rights reserved.
+        </p>
+
+    </footer>
+
+</div>
+```
+
+</body>
+
+</html>
